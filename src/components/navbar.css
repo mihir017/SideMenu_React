@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Open+Sans:wght@300;500;600&family=Roboto:wght@300;500&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-font: "Montserrat", sans-serif;
+    --secondary-font: "Open Sans", sans-serif;
+    /* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+}
+a {
+    text-decoration: none;
+    color: #333;
+    font-family: var(--primary-font);
+}
+li {
+    list-style: none;
+}
+
+/* =============== navbar Header =============== */
+.flex {
+    display: flex;
+}
+.align-items {
+    align-items: center;
+}
+.container {
+    max-width: 1440px;
+    margin: auto;
+    padding: 1rem;
+}
+.navbarHeader {
+    justify-content: space-between;
+    /* border-bottom: 1px solid rgb(157, 157, 157); */
+    padding-bottom: 1rem;
+}
+.navbarHeader .logo {
+    font-size: 1.3rem;
+    font-family: var(--secondary-font);
+    padding-right: 0.7rem;
+    border-right: 1px solid #333;
+}
+.navbarHeader .logo span {
+    color: red;
+}
+.navbarHeader div p {
+    padding-left: 0.7rem;
+    font-size: 1rem;
+    font-family: var(--primary-font);
+    font-weight: 300;
+    margin-top: 5px;
+}
+.navbarHeader ul li {
+    margin-right: 1.5rem;
+}
+.navbarHeader ul li:last-child {
+    margin-right: 0;
+}
+.navbarHeader ul li a {
+    font-family: var(--primary-font);
+    font-size: 0.8rem;
+    color: #333;
+    font-weight: 300;
+    letter-spacing: 1px;
+    background-color: rgb(165, 165, 165);
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    border: 1px solid rgb(157, 157, 157);
+    color: white;
+}
+.navbarHeader ul .signUp a {
+    border: 1px solid rgb(157, 157, 157);
+    background: transparent;
+    color: rgb(92, 92, 92);
+}
+/* =============== navbar Header =============== */
+
+/* ================ hero section ================ */
+
+.splitScreen {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+.leftPart {
+    border-right: 1px solid #333;
+    height: calc(100vh - 58px);
+    /* position: sticky; */
+}
+
+/* ================ hero Section ================ */
+
+/* ================ Right Navbar ================ */
+
+.rightNav ul {
+    justify-content: space-evenly;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgb(157, 157, 157);
+}
+.rightNav ul li {
+    margin-right: 2rem;
+}
+.rightNav ul li:last-child {
+    margin-right: 0;
+}
+.rightNav ul li a {
+    color: #333;
+    font-family: var(--secondary-font);
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+/* ================ Right Navbar ================ */
+/* ================ Sidebar Menu ================ */
+
+.sidebarMenu {
+    padding: 1rem;
+}
+.sidebarMenu ul li .link {
+    padding: 1rem 0.3rem;
+    justify-content: space-between;
+    cursor: pointer;
+    border-top: 1px solid rgb(157, 157, 157);
+}
+/* .sidebarMenu ul li:last-child .link {
+    border-bottom: 1px solid rgb(157, 157, 157);
+} */
+.sidebarMenu ul li .link a {
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+}
+.sidebarMenu ul li .link i {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+.leftUL {
+    border-bottom: 1px solid rgb(157, 157, 157);
+}
+
+.sidebarMenu ul li .dropdown {
+    padding-bottom: 1.2rem;
+    display: none;
+}
+.sidebarMenu ul li .dropdown.active {
+    display: block;
+}
+.sidebarMenu ul li .dropdown li {
+    padding: 0 0 0.8rem 0.5rem;
+    font-size: 0.85rem;
+}
+
+/* ================ Sidebar Menu ================ */
